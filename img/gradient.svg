@@ -1,0 +1,13 @@
+<svg width="480" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <linearGradient y2="1" x2="1" y1="0" x1="1" id="svg_3">
+   <stop offset="0" stop-opacity="0.99219" stop-color="#1976d2"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#bbdefb"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="url(#svg_3)" x="1" y="0" width="480" height="480" id="svg_1"/>
+ </g>
+</svg>
