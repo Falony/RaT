@@ -234,6 +234,7 @@ label[for="nav-trigger"] {
 }
 
 .main-block-row{
+	text-align: center;
 }
 
 .main-block-colh {
@@ -250,8 +251,10 @@ label[for="nav-trigger"] {
 
 .main-block-col-bl{
 	display: inline-block;
-	width: 33%;
+	width: 28%;
 	vertical-align: top;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .row-col-icon{
@@ -272,6 +275,7 @@ label[for="nav-trigger"] {
 	background: #2196F3;
 	padding-top: 0.675rem;
 	padding-bottom: 0.675rem;
+	color: white;
 }
 
 .row-col-text{
@@ -279,6 +283,14 @@ label[for="nav-trigger"] {
 	padding-left: 0.375rem;
 	padding-right: 0.375rem;
 	font-size: 14px;
+}
+
+.row-col-text-bl{
+	font-weight: 300;
+	padding-left: 0.375rem;
+	padding-right: 0.375rem;
+	font-size: 14px;
+	border-radius: 3px;
 }
 
 .row-col-link a{
