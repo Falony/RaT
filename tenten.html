@@ -1,10 +1,24 @@
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 		<title>Rent And Camp</title>
 	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.grid-row-inner a').each(function() {
+				var tis = $(this), state = false, answer = tis.next('div').slideUp();
+				tis.click(function() {
+					state = !state;
+					answer.slideToggle(state);
+					tis.toggleClass('active',state);
+				});
+			});
+		});
+	</script>
 
 	<body>
 	<!-- Mobile Navigation Start -->
@@ -60,7 +74,7 @@
 		    			<div class="row-col-text pad-top-col">
 		    				In dit pakket zit in een tent en een volledige inventaris.
 		    			</div>
-		    			<div class="row-col-link"><a>Wat zit er in de inventaris?</a></div>
+		    			<div class="row-col-link-bl"><a>Wat zit er in de inventaris?</a></div>
 		    		</div>
 		    		<div class="main-block-col-bl center">
 		    			<div class="row-col-title-bl">Optie 3</div>
@@ -82,11 +96,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">1</div>Bardani Torino</h2>
-							<p>Huurkosten tent &euro;115m,- per week.</p>
-							<p>Huurkosten tent + inventaris &euro;145,- per week.</p>
-							<p>Huurkosten tent + inventaris + bagagewagen &euro;195,- per week.</p>
-
+							<p>Sportieve 4-5 persoons ripstop katoen/polyester tunneltent incl. aanritsbare luifel met inritsbaar PE kuipgrondzeil en aluminium boogstokken. De Torino AL is zeer geschikt voor kampeerders die een degelijke tent zoeken met een goed comfort..</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 					<div class="grid-row-col --image">
@@ -104,10 +170,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">2</div>Bardani Modena 330/Locarno 330</h2>
-							<p>Log in op onze website en klik op "naar de organizer".</p>
-							<p>Klik op "maak direct een nieuw evenement" om je evenement aan te maken.</p>
-							<p>Verkoop vervolgens je tickets via je eigen ticketshop.</p>
+							<p>Royale 6 persoons ripstop katoen/polyester tunneltent met inritsbaar PE kuipgrondzeil. Een royale luifel met afsluitbare ramen, windvangers en aluminium boogstokken. De Locarno 400 is zeer geschikt voor kampeerders die een degelijke tent zoeken met een goed comfort.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -118,10 +237,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">3</div>Bardani Locarno 400</h2>
-							<p>Download Entranz Bleep uit de Chrome web store door op de knop hieronder te klikken of het zelf op te zoeken in de Chrome web store.</p>
-							<p>Start Entranz Bleep en log in met je Entranz accountgegevens.</p>
-							<p>Scan de e-tickets/mobiele tickets bij je evenement. Ook als er geen internetverbinding beschikbaar is.</p>
+							<p>Royale 6 persoons ripstop katoen/polyester tunneltent met inritsbaar PE kuipgrondzeil. Een royale luifel met afsluitbare ramen, windvangers en aluminium boogstokken. De Locarno 400 is zeer geschikt voor kampeerders die een degelijke tent zoeken met een goed comfort.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 
@@ -140,10 +312,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">4</div>Bardani Villagrande 400</h2>
-							<p>Log in op onze website en klik op "naar de organizer".</p>
-							<p>Klik op "maak direct een nieuw evenement" om je evenement aan te maken.</p>
-							<p>Verkoop vervolgens je tickets via je eigen ticketshop.</p>
+							<p>Royale 5-6 persoons tunneltent met inritsbaar bisonyl kuipgrondzeil, aluminium boogstokken en volledig inritsbare voorwand met horrengaas en ramen in de luifel. De Villagrande 400 Prestige tent geeft u de hoogste kwaliteit die Bardani te bieden heeft. Voor kampeerders die kiezen voor duurzaamheid en comfort.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -154,10 +379,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">5</div>Bardani Dream Lodge 400</h2>
-							<p>Download Entranz Bleep uit de Chrome web store door op de knop hieronder te klikken of het zelf op te zoeken in de Chrome web store.</p>
-							<p>Start Entranz Bleep en log in met je Entranz accountgegevens.</p>
-							<p>Scan de e-tickets/mobiele tickets bij je evenement. Ook als er geen internetverbinding beschikbaar is.</p>
+							<p>De Bardani Dream Lodge 400 is een geweldige familietent waarin voldoende ruimte is voor 5 personen. De tent is gemaakt van sterke en duurzame materialen en door het tunnelontwerp staat de Dream Lodge 400 als een huis.Een zware spanband aan de voorzijde van de tent zorgt voor extra stabiliteit. Deze luxe uitgevoerde tunneltent is een van de modellen uit de Prestige Line van Bardani,en is gemaakt van ripstop katoen.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 
@@ -176,10 +454,64 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">6</div>Bardani Paradise Beach 410</h2>
-							<p>Log in op onze website en klik op "naar de organizer".</p>
-							<p>Klik op "maak direct een nieuw evenement" om je evenement aan te maken.</p>
-							<p>Verkoop vervolgens je tickets via je eigen ticketshop.</p>
+							<p>De Paradise Beach is een zeer royale familietent van Bardani. Een ruime slaapcabine biedt ruimte aan 5 personen. Deze cabine is gemakkelijk in tweeën te splitsen middels een inritsbare scheidingswand. De leefruimte is voorzien van een inritsbaar bisonyl kuipgrondzeil dat neerklapbaar is bij de doorgangen.
+							Rondom deze ruimte bevinden zich volop ramen waardoor de leefruimte erg licht is. </p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -189,10 +521,63 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">7</div>Bardani Airwolf 300</h2>
-							<p>Download Entranz Bleep uit de Chrome web store door op de knop hieronder te klikken of het zelf op te zoeken in de Chrome web store.</p>
-							<p>Start Entranz Bleep en log in met je Entranz accountgegevens.</p>
-							<p>Scan de e-tickets/mobiele tickets bij je evenement. Ook als er geen internetverbinding beschikbaar is.</p>
+							<p>De Airwolf 300 is een sportieve oppmptent van Bardani. De tent is voorzien van een slaapcabine voor 4 personen, die in tweeën splitsbaar is middels een inritsbare wand. In het leefgedeelte heeft u een zij- en vooringang en ramen rondom. De 'bodem' van de tent bestaat uit een vast PE kruipgronzeil. De vaste luifel zorgt voor een extra schaduwplek overdag en houdt het een stuk koeler in de tent zelf.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 
@@ -210,10 +595,64 @@
 					<div class="grid-row-col">
 						<div class="grid-row-inner">
 							<h2><div class="circle_step">8</div>Bardani Airwolf 400 XL Tent</h2>
-							<p>Log in op onze website en klik op "naar de organizer".</p>
-							<p>Klik op "maak direct een nieuw evenement" om je evenement aan te maken.</p>
-							<p>Verkoop vervolgens je tickets via je eigen ticketshop.</p>
+							<p>De Airwolf 400 XL is een zeer royale oppomptent van Bardani. De grote broer van de Airwolf 400 kenmerkt zich door een leefruimte die stukken groter is! Voorzien van een slaapcabine voor 5 personen, die in tweeën splitsbaar is middels een inritsbare wand.
+							In het leefgedeelte heeft u een zij- en vooringang en ramen rondom. De 'bodem' van de tent bestaat uit een vast PE kuipgrondzeil. De vaste luifel zorgt voor een extra schaduwplek overdag, en houdt het een stuk koeler in de tent zelf.</p>
 							<a>Bekijk alle specificaties <i class="zmdi zmdi-chevron-down"></i></a>
+								<div>
+									<table>
+										<th>Materiaal</th>
+										<tr>
+											<td>Buiten</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Binnen</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Grond</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Stokken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Ritsen</td>
+											<td>asdsa</td>
+										</tr>
+
+										<th>Afmetingen</th>
+										<tr>
+											<td>Tent (lxb cm)</td>
+											<td>asdasd</td>
+										</tr>
+										<tr>
+											<td>Slaapcabine</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Leefruimte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Hoogte</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>Gewicht</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>tentzakken</td>
+											<td>asdsa</td>
+										</tr>
+										<tr>
+											<td>pakmaat (lxbxh cm)</td>
+											<td>asdsa</td>
+										</tr>
+									</table>
+								</div>
 						</div>
 					</div>
 				</div>
