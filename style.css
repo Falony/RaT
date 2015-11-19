@@ -434,7 +434,7 @@ body {
 .main-block-container-prefix{
 	max-width: 1100px;
 	margin:0 auto;
-	background: #FFF9c4;
+	background: #f5f5f5;
 	transform: translateY(-125px);
 	border-radius: 15px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -494,7 +494,7 @@ table{
 }
 
 tr:nth-child(odd){
-	background: #BBDEFB;
+	background: #E3F2FD;
 }
 
 th{
@@ -502,6 +502,7 @@ th{
 	color: #212121;
 	text-align: left;
 	background: white;
+	padding: 0.875rem 0.375rem;
 }
 
 td{
@@ -509,6 +510,18 @@ td{
 	font-size: 14px;
 	color: #727272;
 	padding: 0.875rem 0.375rem;
+}
+
+.excep th{
+	padding-top: 1rem;
+	color: #212121;
+	text-align: left;
+	background: #E3F2FD;
+	padding: 0.875rem 0.375rem;
+}
+
+.excep tr:nth-child(odd){
+	background: white;
 }
 
 /* Micro reset */
