@@ -2,9 +2,11 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="drop-style.css">
 		<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 		<title>Rent And Camp</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 	</head>
 
 	<body>
@@ -60,26 +62,43 @@
 
 			<div class="white-wrap">
 				<div class="main-block-container-prefix">
-					<div class="main-block-row">
-			    		<div class="main-block-col center">
-			    			<div class="row-col-text pad-top-col">
+					<div class="main-block-row-form">
+			    		<div class="main-block-col-form">
+			    			<div class="row-col-form pad-top-col">
 				    			<form>
-				    				<input type="text" name="swoop" placeholder="Naam" />
+				    				<span>Persoonlijke gegevens</span>
+				    				<input type="text" name="swoop" placeholder="Naam" /><br>
 				    				<input type="text" name="swoop" placeholder="Adres" />
-				    				<input type="text" name="swoop" placeholder="Postcode" />
-				    				<input type="text" name="swoop" placeholder="Woonplaats" />
+				    				<input type="text" class="form-marg" name="swoop" placeholder="Postcode" />
+				    				<input type="text" name="swoop" placeholder="Woonplaats" /><br>
 				    				<input type="text" name="swoop" placeholder="Telefoonnummer" />
-				    				<input type="text" name="swoop" placeholder="E-mail" />
-				    				<input type="text" name="swoop" placeholder="Adres" />
-				    				<input type="text" name="swoop" placeholder="Adres" />
-				    				<input type="text" name="swoop" placeholder="Adres" />
-				    				<input type="text" name="swoop" />
-				    				<input type="text" name="swoop" />
-				    				<input type="text" name="swoop" />
+				    				<input type="text" class="form-marg" name="swoop" placeholder="E-mail" />
+
+				    				<span>Kies uw huurperiode</span>
+				    				<p>Van</p><p>Tot</p>
+				    				<input type="date" name="swoop" placeholder="Van: dd-mm-yy" />
+				    				<input type="date" class="form-marg" name="swoop" placeholder="Tot: dd-mm-yy" />
+
+				    				<span>Kies uw tent</span>
+									<div id="dd" class="wrapper-dropdown-3" tabindex="1">
+										<span>Maak uw keuze</span>
+										<ul class="dropdown">
+											<li><a href="#"><i class="icon-envelope icon-large"></i>Bardani Torino</a></li>
+											<li><a href="#"><i class="icon-truck icon-large"></i>Bardani Modena 330</a></li>
+											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Locarno 400</a></li>
+											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Villagrande 400</a></li>
+											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Paradise Beach 410</a></li>
+											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Airwolf 300</a></li>
+											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Airwolf 400 XL</a></li>
+										</ul>
+									</div>
+
+									<span>Kies uw extra's</span>
+				    				<label for="inv">      <input type="checkbox" name="inv"       placeholder="inv" /><p>Inventaris</p></label>
+				    				<label for="koelkast"> <input type="checkbox" name="koelkast"  placeholder="koelkast" class="form-marg-c" /><p>Koelkast</p></label>
+				    				<label for="dakkoffer"><input type="checkbox" name="dakkoffer" placeholder="dakkoffer" /><p>Dakkoffer</p></label>
+				    				<label for="extratent"><input type="checkbox" name="extratent" placeholder="extratent" class="form-marg-c" /><p>Bijzettent</p></label>
 				    			</form>
-			    			</div>
-			    			<div class="row-col-link pad-top">
-			    				<a>Lees meer..</a>
 			    			</div>
 			    		</div>
 			    	</div>
@@ -88,5 +107,54 @@
 
 		</div>
 
+
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-3').removeClass('active');
+				});
+
+			});
+
+		</script>
 	</body>
 </html>
