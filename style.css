@@ -503,21 +503,6 @@ input[type=checkbox]{
 label>p{
 	width: 100px;
 }
-.wrapper-dropdown-5:focus {
-    border-radius: 5px 5px 0 0;
-    background: white;
-    box-shadow: none;
-    border-bottom: none;
-    color: #212121;
-}
-
-.wrapper-dropdown-5:focus:after {
-    border-color: #82d1ff transparent;
-}
-
-.wrapper-dropdown-5:focus .dropdown {
-    max-height: 400px;
-}
 
 form p:nth-child(even){
 	margin-left: 2rem;
