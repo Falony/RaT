@@ -81,7 +81,7 @@
 
 				    				<span>Kies uw tent</span>
 									<div id="dd" class="wrapper-dropdown-3" tabindex="1">
-										<span name="tent" form="form1">Maak uw keuze</span>
+										<span name="tent" form="form1" id="add-span">Maak uw keuze</span>
 										<ul class="dropdown">
 											<li><a href="#"><i class="icon-envelope icon-large"></i>Bardani Torino</a></li>
 											<li><a href="#"><i class="icon-truck icon-large"></i>Bardani Modena 330</a></li>
@@ -91,26 +91,27 @@
 											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Airwolf 300</a></li>
 											<li><a href="#"><i class="icon-plane icon-large"></i>Bardani Airwolf 400 XL</a></li>
 										</ul>
+										<input type="hidden" name="dropdown-selection" id="dropdown-selection" />
 									</div>
 
 									<span>Kies uw extra's</span>
-				    				<input type="checkbox" name="extra" value="inv" id="inv" placeholder="inv" onclick="valueChanged()" /><label for="inv"><p>Inventaris</p></label><br>
-				    				<input type="checkbox" name="extra" value="bagw" id="bagw" placeholder="bagw" onclick="valueChanged()" /><label for="bagw"><p>Bagagewagen</p></label><br>
-				    				<input type="checkbox" name="extra" value="koelkast" id="koelkast"  placeholder="koelkast" class="form-marg-c" /><label for="koelkast"><p>Koelkast</p><p class="mini">(&euro;20,- p/week)</p></label><br>
-				    				<input type="checkbox" name="extra" value="dakkoffer" id="dakkoffer" placeholder="dakkoffer" /><label for="dakkoffer"><p>Dakkoffer</p><p class="mini">(&euro;27,50 p/week)</p></label><br>
-				    				<input type="checkbox" name="extra" value="extratent" id="extratent" placeholder="extratent" class="form-marg-c" /><label for="extratent"><p>2-persoons Bijzettent</p><p class="mini">(&euro;35,- p/week)</p></label>
+				    				<input type="checkbox" name="extra[]" value="inv" id="inv" placeholder="inv" onclick="valueChanged()" /><label for="inv"><p>Inventaris</p></label><br>
+				    				<input type="checkbox" name="extra[]" value="bagw" id="bagw" placeholder="bagw" onclick="valueChanged()" /><label for="bagw"><p>Bagagewagen</p></label><br>
+				    				<input type="checkbox" name="extra[]" value="koelkast" id="koelkast"  placeholder="koelkast" class="form-marg-c" /><label for="koelkast"><p>Koelkast</p><p class="mini">(&euro;20,- p/week)</p></label><br>
+				    				<input type="checkbox" name="extra[]" value="dakkoffer" id="dakkoffer" placeholder="dakkoffer" /><label for="dakkoffer"><p>Dakkoffer</p><p class="mini">(&euro;27,50 p/week)</p></label><br>
+				    				<input type="checkbox" name="extra[]" value="extratent" id="extratent" placeholder="extratent" class="form-marg-c" /><label for="extratent"><p>2-persoons Bijzettent</p><p class="mini">(&euro;35,- p/week)</p></label>
 
 				    				<div class="form-persons">Ik wil een inventaris voor <input type="text" name="inva" class="form-persons-amount" /> personen </div>
 
 				    				<div class="form-bagw">
 					    				<span>Kies uw bagagewagen</span>
-						    			<input type="radio" name="bagw" id="speedy"  placeholder="speedy" class="form-marg-c" /><label for="speedy"><p>Speedy</p><p class="mini">(&euro;52,50 p/week)</p></label><br>
-					    				<input type="radio" name="bagw" id="club" placeholder="club" /><label for="club"><p>Club</p><p class="mini">(&euro;62,50 p/week)</p></label><br>
-					    				<input type="radio" name="bagw" id="rt500" placeholder="rt500" class="form-marg-c" /><label for="rt500"><p>RT500</p><p class="mini">(&euro;67,50 p/week)</p></label>
+						    			<input type="radio" name="bagw" id="speedy" value="Speedy"  placeholder="speedy" class="form-marg-c" /><label for="speedy"><p>Speedy</p><p class="mini">(&euro;52,50 p/week)</p></label><br>
+					    				<input type="radio" name="bagw" value="Club" id="club" placeholder="club" /><label for="club"><p>Club</p><p class="mini">(&euro;62,50 p/week)</p></label><br>
+					    				<input type="radio" name="bagw" value="RT500" id="rt500" placeholder="rt500" class="form-marg-c" /><label for="rt500"><p>RT500</p><p class="mini">(&euro;67,50 p/week)</p></label>
 				    				</div>
 
 				    				<span>Aanvullende vragen</span>
-									<textarea name="comment" form="form1" rows="3" placeholder="aanvullende vragen of informatie"></textarea>
+									<textarea name="messa" id="messa" rows="3"></textarea>
 
 									<input type="submit" name="submit" value="verzenden" />
 
@@ -142,6 +143,7 @@
 
 					obj.dd.on('click', function(event){
 						$(this).toggleClass('active');
+						$('#dropdown-selection').val($('#add-span:visible').text());
 						return false;
 					});
 
