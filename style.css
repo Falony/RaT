@@ -482,8 +482,11 @@ body {
 }
 
 
-.form-marg-c{
-	margin-left: 6rem !IMPORTANT;
+.mini{
+	font-size: 12px;
+	margin: 0 !IMPORTANT;
+	padding: 0;
+	width: auto !IMPORTANT;
 }
 
 form span:nth-child(1n+2){
@@ -498,15 +501,66 @@ form p{
 
 input[type=checkbox]{
 	width: 5.5%;
+	display: inline-block;
 }
 
-label>p{
-	width: 100px;
+input[type=radio]{
+	width: 5.5%;
+	display: inline-block;
+}
+
+input[type=submit]{
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background: #1976d2;
+	color: white;
 }
 
 form p:nth-child(even){
 	margin-left: 2rem;
 }
+
+form textarea{
+	padding: 0.875rem 0.375rem;
+	margin: 0.675rem 0rem;
+	width: 100%;
+	border: 1px solid #B6B6B6;
+	border-radius: 3px;
+	font-size: 16px;
+	display: inline-block;
+	resize: vertical;
+}
+
+.wrapper-drowpdown-3>span{
+	padding-top: 0.375rem !IMPORTANT;
+}
+
+.form-persons-amount{
+	padding: 0.475rem 0.375rem !IMPORTANT;
+	margin: 0.675rem 0rem;
+	width: 10% !IMPORTANT;
+	border: 1px solid #B6B6B6;
+	border-radius: 3px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.form-persons{
+	display: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-bagw{
+	display: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-bagw span{
+	padding-top: 2rem;
+}
+
 .main-block-container-prefix input:focus{
 	border: 1px solid #2196F3;
 }

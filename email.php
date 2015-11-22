@@ -1,17 +1,36 @@
 <?php
  / Data variables /
- $sendName  = $_POST['name1'];
- $sendAdres  = $_POST['name1'];
- $sendMail  = $_POST['email1'];
- $sendZIP  = $_POST['name1'];
- $sendWP   = $_POST['message1'];
- $sendTF  = $_POST['message1'];
- $sendMSG   = $_POST['message1'];
- $sendHuur1 = $_POST['message1'];
- $sendHuur2 = $_POST['message1'];
- $sendTent = $_POST['message1'];
- $sendExtra = $_POST['message1'];
+ $sendName  = $_POST['name'];
+ $sendAdres  = $_POST['adres'];
+ $sendMail  = $_POST['email'];
+ $sendZIP  = $_POST['zip'];
+ $sendWP   = $_POST['wp'];
+ $sendTF  = $_POST['tele'];
+ $sendMSG   = $_POST['comment'];
+ $sendHuur1 = $_POST['vdate'];
+ $sendHuur2 = $_POST['tdate'];
+ $sendTent = $_POST['tent'];
+ $sendExtra = $_POST['extra'];
+ $sendinva = $_POST['inva'];
+ $sendbagw = $_POST['bagw'];
 
+
+echo $sendName;
+echo $sendAdres;
+echo $sendMail;
+echo $sendZIP;
+echo $sendWP;
+echo $sendTF;
+echo $sendMSG;
+echo $sendHuur1;
+echo $sendHuur2;
+echo $sendTent;
+echo $sendExtra;
+echo $sendinva;
+echo $sendbagw;
+
+?>
+/*
  / Configuration /
  $onderwerp = 'Offerte aanvraag';
 
@@ -52,3 +71,5 @@
  }
 
 ?>
+
+*/
