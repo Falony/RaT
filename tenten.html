@@ -17,6 +17,16 @@
 					tis.toggleClass('active',state);
 				});
 			});
+
+
+			$('.row-col-link-bl').each(function() {
+				var tis = $(this), state = false, answer = tis.next('div').slideUp();
+				tis.click(function() {
+					state = !state;
+					answer.slideToggle(state);
+					tis.toggleClass('active',state);
+				});
+			});
 		});
 	</script>
 
@@ -75,6 +85,61 @@
 		    				In dit pakket zit een tent en een volledige inventaris.
 		    			</div>
 		    			<div class="row-col-link-bl"><a>Wat zit er in de inventaris?</a></div>
+		    				<div>
+		    					<table>
+										<tr>
+											<td>Luchtbedden voor x aantal personen</td>
+										</tr>
+										<tr>
+											<td>Tafel met 2 verstelbare stoelen en klapstoelen.</td>
+										</tr>
+										<tr>
+											<td>Twee-pits gasstel</td>
+										</tr>
+										<tr>
+											<td>Gasfles, regelaar met slang</td>
+										</tr>
+										<tr>
+											<td>Kooktafel/kast</td>
+										</tr>
+										<tr>
+											<td>Kledinghangers</td>
+										</tr>
+										<tr>
+											<td>Koekenpan + camping kookset</td>
+										</tr>
+										<tr>
+											<td>Koffiefilter + maatschepje</td>
+										</tr>
+										<tr>
+											<td>Bestek voor x aantal personen</td>
+										</tr>
+										<tr>
+											<td>Kaasschaaf, broodmes, schilmes, schaar</td>
+										</tr>
+										<tr>
+											<td>Juslepel,soeplepel, Klopper, spatel, blikopener</td>
+										</tr>
+										<tr>
+											<td>Borden, soepkommen, bekers x aantal personen</td>
+										</tr>
+										<tr>
+											<td>Afwasteil met afwasborstel, veger en blik, vaatdoek, bezem.</td>
+										</tr>
+										<tr>
+											<td>Lamp, stroomkabel</td>
+										</tr>
+										<tr>
+											<td>Jerrycan met tappunt</td>
+										</tr>
+										<tr>
+											<td>Hamer en haringen</td>
+										</tr>
+										<tr>
+											<td>Grondzeiltjes voor onder het kuipzeil, tapijt voor in uw voortent</td>
+										</tr>
+									</table>
+		    				</div>
 		    		</div>
 		    		<div class="main-block-col-bl center">
 		    			<div class="row-col-title-bl">Optie 3</div>
