@@ -339,6 +339,40 @@ label[for="nav-trigger"] {
 
 @media screen and (max-width: 960px){
 
+.pad-top-3x{
+	padding: 0;
+}
+
+.main-block-col-bl{
+	display: block;
+	width: 85%;
+	padding: 0;
+	padding-bottom: 1rem;
+	margin: 0 auto;
+}
+
+.--image{
+	padding-top: 0;
+	min-height: 0px;
+}
+
+.--image img{
+	width: 100%;
+}
+
+.grid-row-col{
+	display: block;
+	padding: 0rem 0.375rem;
+}
+
+.main-block-container{
+	max-width: 100%;
+}
+
+html, body{
+	background: #1976d2;
+}
+
 .main-block-img {
 	width: 50%;
 	margin: 0 auto;
@@ -645,6 +679,52 @@ td{
 
 .excep tr:nth-child(odd){
 	background: white;
+}
+
+@media screen and (max-width: 960px){
+
+.form-marg{
+	margin-left: 0 !IMPORTANT;
+}
+
+.main-block-container-prefix input {
+    padding: 0.875rem 0.375rem;
+    margin: 0.675rem 0rem;
+    width: 90%;
+    border: 1px solid #B6B6B6;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.main-block-col-form{
+	padding: 0rem 0.375rem;
+	width: 100%;
+}
+
+input[type=checkbox]{
+	width: 5.5%;
+	display: inline-block;
+}
+
+input[type=radio]{
+	width: 5.5%;
+	display: inline-block;
+}
+
+input[type=submit]{
+	cursor: pointer;
+	width: 100%;
+}
+
+input[type=submit]:hover{
+	background: #1976d2;
+	color: white;
+}
+
+.wrapper-dropdown-3 {
+	width: 90% !IMPORTANT;
+}
+
 }
 
 /* Micro reset */
