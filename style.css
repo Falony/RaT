@@ -188,6 +188,10 @@ label[for="nav-trigger"] {
 	padding-top: 0.875rem;
 }
 
+.pad-bot-col{
+	padding-bottom: 0.875rem;
+}
+
 .center{
 	text-align: center;
 }
@@ -246,7 +250,6 @@ label[for="nav-trigger"] {
 }
 
 .main-block-row{
-	text-align: center;
 }
 
 .main-block-row-form{
@@ -725,6 +728,153 @@ input[type=submit]:hover{
 	width: 90% !IMPORTANT;
 }
 
+}
+
+.contact-ul{
+	list-style: none;
+}
+
+.main-cont h2{
+	margin-bottom: 10px;
+}
+
+.contact-ul li{
+	padding: 30px 0px 0px 10px;
+}
+
+.contact-ul-foot li{
+	padding: 20px 0px 0px 50px;
+}
+
+.marg-bot-0{
+	margin-bottom: 0;
+}
+
+.contact-tel:before,.contact-mail:before{
+	content:'';
+	width:34px;
+	position: absolute;
+	height:34px;
+	border-radius:50%;
+	margin-left: -50px;
+	margin-top: -5px;
+}
+
+.contact-tel:before{
+	background:url(img/tel.svg) center center no-repeat #8BC34A;
+	background-size:20px 20px
+}
+.contact-mail:before{
+	background:url(img/mail.svg) center center no-repeat #8BC34A;
+	background-size:20px 20px;
+}
+
+.contact-mail, .contact-tel{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.main-block-contact{
+	color: #272727;
+}
+
+.main-cont{
+	color: #272727;
+	padding-left: 4rem;
+}
+
+@media only screen and (min-width: 801px){
+	.tile-row{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		border: 0px solid gray;
+		border-top: 1px solid #eff1f2;
+	}
+
+	.contact_form span {
+		display: inline-block;
+	}
+
+	.tile-row-col{
+		display: table-cell;
+		width: 50%;
+		position: relative;
+	}
+
+	.contact_form span{
+		display: block;
+		width: 45%;
+		padding: 1rem 0rem;
+		float: left;
+	}
+
+	.contact_form span:nth-child(2){
+		float: right;	
+	}
+
+	.contact_form span:nth-child(4){
+		float: right;
+	}
+
+}
+/*.tile-row{
+	flex-direction: column;
+	display: webkit box;
+	display: webkit flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	display: flex;
+}*/
+
+.tile-row-col{
+	padding: 4.6875rem 1.5rem;
+	vertical-align: middle;
+	background: white;
+}
+
+.-image{
+	padding: 0;
+	min-height: 500px;
+	height: 500px;
+}
+
+.tile-row-inner{
+	max-width: 320px;
+	margin: auto;
+}
+
+.tile-row-inner h2{
+	color: #272727;
+	font-family: roboto;
+}
+
+.tile-row-inner p{
+	color: rgba(0,0,0,0.7);
+	padding-bottom: 0.2rem;
+}
+
+.main-block-contact input{
+    padding: 0.5rem 0.375rem;
+    margin: 0.675rem 0rem;
+    width: 95%;
+    border: 1px solid #B6B6B6;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    background: #F7F7F7;
+
+.main-block-contact{
+	width: 90%;
+	padding: 0.375rem;
+}
+
+.main-block-contact p{
+	font-size: 14px;
+}
+
+.marg-top-col{
+	margin-top: 0.875rem;
 }
 
 /* Micro reset */
