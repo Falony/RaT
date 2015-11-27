@@ -742,6 +742,23 @@ input[type=submit]:hover{
 	padding: 30px 0px 0px 10px;
 }
 
+.main-block-row-inv{
+	width: 100%;
+	padding-top: 1rem;
+}
+
+.main-block-row-inv table{
+	width: 100%;
+}
+
+.main-block-row-inv tr{
+	width: 100%;
+}
+
+.main-block-row-inv td{
+	width: 50%;
+}
+
 .contact-ul-foot li{
 	padding: 20px 0px 0px 50px;
 }
