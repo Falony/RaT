@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 		<title>Rent And Camp</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -33,14 +34,16 @@
 					<div class="main-block-colh pad-top-2x pad-bot-2x">
 						<div class="main-block-contact">
 								<h2 class="pad-bot-col">Neem contact met ons op</h2>
-								<p class="pad-bot-col">Gebruik onderstaand formulier om eventuele vragen te stellen of opmerkingen te geven. Wij zullen altijd proberen om binnen 24 uur een antwoord geven op uw vraag. Uiteraard mag u ons ook gewoon bellen.</p>
-								<span>Naam:</span>
-								<input type="text" name="name" />
-								<span>E-mail:</span>
-								<input type="text" name="email" />
-								<span>Bericht:</span>
-								<input type="text" name="msg" />
-								<input type="submit" name="submit" class="marg-top-col" />
+								<p class="pad-bot-col">Gebruik onderstaand formulier om eventuele vragen te stellen of opmerkingen te geven. Wij zullen altijd proberen om binnen 24 uur een antwoord te geven op uw vraag. Uiteraard mag u ons ook gewoon bellen.</p>
+								<form name="form2" action="contact.php" method="post">
+									<span>Naam:</span>
+									<input type="text" name="name" />
+									<span>E-mail:</span>
+									<input type="text" name="email" />
+									<span>Bericht:</span>
+									<textarea name="msg" id="msg" rows="3"></textarea>
+									<input type="submit" name="submit" class="marg-top" />
+								</form>
 						</div>
 					</div>
 					<div class="main-block-colh conta pad-top-2x pad-bot-2x">
